@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "todo_app" {
-  ami           = "<AMI-ID>" # Use an appropriate AMI
+  ami           = "ami-01816d07b1128cd2d"
   instance_type = "t2.micro"
-  key_name      = "project_CM.pem"
+  key_name      = "project-cm"
 
   tags = {
     Name = "TodoAppEC2"
